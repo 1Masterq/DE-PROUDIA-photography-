@@ -1,0 +1,122 @@
+body {
+      background-color: gray;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: black;
+      overflow: hidden;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: yellow;
+    }
+
+    /* Main container */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      max-width: 1200px;
+      margin: 40px auto;
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+      color: black;
+    }
+
+    .image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .image img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: auto;
+    }
+
+    .image-gallery {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-gallery img {
+      width: 30%;
+      border-radius: 8px;
+    }
+
+    .testimonial-gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    .testimonial-card {
+      background: #5c899d;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      flex: 1 1 45%;
+      color: white;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image {
+        text-align: center;
+      }
+
+      .image-gallery img {
+        width: 80%;
+      }
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.7;
+      transition: background-color 0.3s, opacity 0.3s;
+      z-index: 999;
+    }
+
+    .back-to-top:hover {
+      background-color: yellow;
+      color: black;
+      opacity: 1;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
